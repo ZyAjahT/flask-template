@@ -19,7 +19,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/album">Link</a>
+                <a class="nav-link" href="/album">Album</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,10 +56,13 @@
     <div class="container-fluid">
       <div class="container p-2">
         <div class="row">
-          <div class="col">
-            <h2>Heading</h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare efficitur a laoreet; sem suspendisse vulputate aliquam. Fermentum fusce sodales aenean sagittis sagittis ultrices himenaeos odio. Eleifend varius nisl nisi enim senectus felis ultricies. Interdum maecenas senectus vitae ultrices sociosqu.</p>
-            <button type="button" class="btn btn-secondary">View Details >></button>
+          <div class="card" style="width: 18rem;">
+            <img src="{{ data.img }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ data.safe_title }}</h5>
+              <p class="card-text">{{ data.alt }}</p>
+              <a href="{{data.img}}" class="btn btn-primary">See Larger Image</a>
+            </div>
           </div>
           <div class="col">
             <h2>Heading</h2>
